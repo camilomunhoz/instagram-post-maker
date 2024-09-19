@@ -1,0 +1,159 @@
+@import url(./utils.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 2em;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 27px;
+    color: var(--cla-blue);
+    background-color: #555;
+}
+
+.instagram-card {
+    width: 1080px;
+    height: 1080px;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 2em;
+}
+
+.header {
+    width: 100%;
+    min-height: 260px;
+    border-bottom: 20px solid #aaa;
+    font-size: 58px;
+    padding: 0 90px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #fff;
+}
+
+.body {
+    background-color: var(--cla-blue);
+    flex: 1;
+    padding: 80px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.save-the-date,
+.save-the-date > div {
+    width: 100%;
+}
+
+.save-the-date > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save-the-date .top-element {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #aaa;
+    height: 75px;
+    border-bottom: 6px solid var(--cla-blue);
+}
+
+.save-the-date .date-time {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #fff;
+    height: 255px;
+    text-align: center;
+    font-size: 55px;
+}
+
+.save-the-date .date-time .date {
+   font-weight: 700;
+   margin-bottom: 10px;
+   text-transform: uppercase;
+}
+
+.more-info {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.more-info .left-info {
+    flex: 3;
+}
+
+.more-info .right-info {
+    flex: 5;
+}
+
+.more-info .label {
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.more-info .group:not(:last-of-type) {
+    margin-bottom: 48px;
+}
+
+.more-info .modality {
+    background-color: #aaa;
+    color: #333;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 0.6em 1em;
+    border-radius: 999px;
+    display: inline-block;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.more-info .level {
+    /* color: #aaa; */
+    font-size: 38px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.more-info .teacher {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.footer {
+    color: #fff;
+    font-weight: 400;
+    min-height: 120px;
+    height: 120px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.footer .logo {
+    flex: 3;
+    height: 100%;
+}
+
+.footer .logo img {
+    height: 100%;
+}
+
+.footer .mentor {
+    flex: 5;
+}
