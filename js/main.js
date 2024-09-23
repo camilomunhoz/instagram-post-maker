@@ -53,37 +53,43 @@ function clearStyles() {
 }
 
 const data = {
-    language: "spanish",
-    courses: [
+    "language": "spanish",
+    "courses": [
         {
-            name: "Curso de Mentira para o Template",
-            classes: [
+            "name": "Curso de Mentira para o Template",
+            "classes": [
                 {
-                    startDate: "00/00/2024",
-                    endDate: "00/00/2024",
-                    weekday: "Segunda-feira",
-                    startTime: "00:00",
-                    endTime: "00:00",
-                    modality: "Online",
-                    level: "Básico",
-                    teacher: "Foolano di Tahl",
-                    mentor: "Prof. Dra. Ana Bocorny"
+                    "startDate": "00/00/2024",
+                    "endDate": "00/00/2024",
+                    "weekday": "Segunda-feira",
+                    "startTime": "00:00",
+                    "endTime": "00:00",
+                    "modality": "Online",
+                    "level": "Básico",
+                    "teacher": "Foolano di Tahl",
+                    "mentor": "Prof. Dra. Ana Bocorny"
                 },
-            ]
-        },
-        {
-            name: "Curso de Mentira para o Template",
-            classes: [
                 {
-                    startDate: "00/00/2024",
-                    endDate: "00/00/2024",
-                    weekday: "Segunda-feira",
-                    startTime: "00:00",
-                    endTime: "00:00",
-                    modality: "Online",
-                    level: "Básico",
-                    teacher: "Foolano di Tahl",
-                    mentor: "Prof. Dra. Ana Bocorny"
+                    "startDate": "00/00/2024",
+                    "endDate": "00/00/2024",
+                    "weekday": "Segunda-feira",
+                    "startTime": "00:00",
+                    "endTime": "00:00",
+                    "modality": "Online",
+                    "level": "intermediário-avançado",
+                    "teacher": "Foolano di Tahl",
+                    "mentor": "Prof. Dra. Ana Bocorny"
+                },
+                {
+                    "startDate": "00/00/2024",
+                    "endDate": "00/00/2024",
+                    "weekday": "Segunda-feira",
+                    "startTime": "00:00",
+                    "endTime": "00:00",
+                    "modality": "Online",
+                    "level": "intermediário-avançado",
+                    "teacher": "Foolano di Tahl",
+                    "mentor": "Prof. Dra. Ana Bocorny"
                 },
             ]
         },

@@ -27,11 +27,6 @@ const content = data => `
             </div>
         </div>
     </div>
-
-    <div class="footer">
-        <div class="logo"><img src="/logo.png"></div>
-        <div class="mentor">Orientação: ${data.classes[0].mentor}</div>
-    </div>
 `
 
 export default content

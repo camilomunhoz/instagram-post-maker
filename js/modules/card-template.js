@@ -5,8 +5,14 @@ const template = data => `
                 ${data.courseName}
             </span>
         </div>
-        <div class="body n-classes--${data.length}">
-            ${data.content}
+        <div class="body n-classes--${data.nClasses}">
+            <div class="cards">
+                ${data.content}
+            </div>
+            <div class="footer">
+                <div class="logo"><img src="/logo.png"></div>
+                <div class="mentor">Orientação: Prof. Dra. Ana Bocorny</div>
+            </div>
         </div>
     </div>
 `
