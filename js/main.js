@@ -1,4 +1,4 @@
-import defs from "./style-guide.js";
+import defs from "./definitions.js";
 
 import template from "./modules/card-template.js"
 import card1 from "./modules/card-1.js"
@@ -7,12 +7,19 @@ import card3 from "./modules/card-3.js"
 import card4 from "./modules/card-4.js"
 
 $(() => {
-    $('input').on('change', () => colorize($('input[name="lang"]:checked').val()))
+    $('.btn-generate').on('click', generate)
+})
 
+function generate() {
     const cards = [card1, card2, card3, card4]
+    const data = JSON.parse($('textarea[name="data"]').val())
+    data.language = $('input[name="lang"]:checked').val()
 
+    $('.instagram-card').remove()
+    
     for (const course of data.courses) {
         const nClasses = course.classes.length
+        course.mentor = defs[data.language].mentor
         
         const instagramCard = template({
             courseName: course.name,
@@ -24,23 +31,34 @@ $(() => {
         $('body').append(instagramCard)
     }
 
-    html2canvas($('.instagram-card')[0], {
-        scale: 1,
-    }).then(function(canvas) {
-        document.body.appendChild(canvas);
-        $('a')[0].href = canvas.toDataURL('image/png')
-        // $('.instagram-card').slideUp(200)
-    });
-})
+    colorize(data.language)
+    // downloadable()
+}
+
+function downloadable() {
+    $('.instagram-card').each((i, el) => {
+        html2canvas(el, {
+            scale: 1,
+        }).then(function(canvas) {
+            document.body.appendChild(canvas);
+            $('<a/>', {
+                href: canvas.toDataURL('image/png'),
+                download: `curso-${i}.png`,
+            })
+            $('a')[0].href = canvas.toDataURL('image/png')
+            // $('.instagram-card').slideUp(200)
+        });
+    })
+}
 
 function colorize(language) {
     const cards = $('.instagram-card')
 
     clearStyles();
 
-    cards.each((i, el) => {
+    cards.each((_, el) => {
         const nClasses = $(el).data('n-classes')
-        const styleGuide = defs[language][nClasses]
+        const styleGuide = defs[language].styleGuide[nClasses]
 
         for (const item of Object.keys(styleGuide)) {
             $(el).find('.'+item).addClass(styleGuide[item])
@@ -51,49 +69,3 @@ function colorize(language) {
 function clearStyles() {
     $('.instagram-card *').removeClass('cl-white cl-blue cl-yellow cl-cyan cl-pink cl-purple bg-white bg-blue bg-yellow bg-cyan bg-pink bg-purple border-blue border-yellow border-cyan border-pink border-purple ')
 }
-
-const data = {
-    "language": "spanish",
-    "courses": [
-        {
-            "name": "Curso de Mentira para o Template",
-            "classes": [
-                {
-                    "startDate": "00/00/2024",
-                    "endDate": "00/00/2024",
-                    "weekday": "Segunda-feira",
-                    "startTime": "00:00",
-                    "endTime": "00:00",
-                    "modality": "Online",
-                    "level": "Básico",
-                    "teacher": "Foolano di Tahl",
-                    "mentor": "Prof. Dra. Ana Bocorny"
-                },
-                {
-                    "startDate": "00/00/2024",
-                    "endDate": "00/00/2024",
-                    "weekday": "Segunda-feira",
-                    "startTime": "00:00",
-                    "endTime": "00:00",
-                    "modality": "Online",
-                    "level": "intermediário-avançado",
-                    "teacher": "Foolano di Tahl",
-                    "mentor": "Prof. Dra. Ana Bocorny"
-                },
-                {
-                    "startDate": "00/00/2024",
-                    "endDate": "00/00/2024",
-                    "weekday": "Segunda-feira",
-                    "startTime": "00:00",
-                    "endTime": "00:00",
-                    "modality": "Online",
-                    "level": "intermediário-avançado",
-                    "teacher": "Foolano di Tahl",
-                    "mentor": "Prof. Dra. Ana Bocorny"
-                },
-                
-                
-            ]
-        },
-    ]
-};

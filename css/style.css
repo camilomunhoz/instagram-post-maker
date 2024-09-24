@@ -19,6 +19,25 @@ body {
     background-color: #555;
 }
 
+.controls {
+    background-color: #fff;
+    padding: 1.5em;
+    font-size: 30px;
+}
+
+.controls textarea, .controls button {
+    font-size: inherit;
+}
+
+.controls textarea {
+    width: 100%;
+    max-width: 1080px;
+}
+
+.controls button {
+    padding: 20px;
+}
+
 .instagram-card {
     width: 1080px;
     height: 1080px;

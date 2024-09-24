@@ -12,16 +12,21 @@
 </head>
 <body>
 
-    <div>
+    <div class="controls">
         <label><input type="radio" value="english" name="lang"> Inglês</label>
         <label><input type="radio" value="spanish" name="lang"> Espanhol</label>
         <label><input type="radio" value="german" name="lang"> Alemão</label>
         <label><input type="radio" value="french" name="lang"> Francês</label>
         <label><input type="radio" value="japanese" name="lang"> Japonês</label>
         <label><input type="radio" value="portuguese" name="lang"> Português</label>
-    </div>
 
-    <a href="#" download="teste.png">DOWNLOAD</a>
+        <div>
+            <textarea name="data" cols="80" rows="20"></textarea>
+        </div>
+
+        <button class="btn-generate">Gerar</button>
+        <a href="/data.example.json" target="_blank">Ver exemplo</a>
+    </div>
 
     <!-- dinamically via JS -->
 
