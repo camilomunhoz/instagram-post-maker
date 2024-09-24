@@ -146,7 +146,7 @@ const defs = {
             'header': 'border-yellow',
             'top-element': 'bg-pink',
             'modality': 'bg-yellow cl-blue',
-            'level': 'bg-blue cl-yellow',
+            'level': 'bg-white cl-blue',
         },
         '4': {
             'header': 'border-yellow',
