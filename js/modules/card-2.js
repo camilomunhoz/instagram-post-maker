@@ -8,7 +8,7 @@ function card(info) {
             </div>
             <div class="date-time">
                 <div>
-                    <div class="date">${info.weekday}</div>
+                    <div class="weekday">${info.weekday}</div>
                     <div class="time">${info.startTime} - ${info.endTime}</div>
                     <div class="modality">${info.modality}</div>
                 </div>

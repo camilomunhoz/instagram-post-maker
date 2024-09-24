@@ -10,19 +10,19 @@ const defs = {
             'header': 'border-cyan',
             'top-element': 'bg-yellow',
             'modality': 'bg-cyan cl-blue',
-            'level': 'cl-cyan',
+            'level': 'bg-blue cl-cyan',
         },
         '3': {
             'header': 'border-cyan',
             'top-element': 'bg-yellow',
             'modality': 'bg-cyan cl-blue',
-            'level': 'cl-cyan',
+            'level': 'bg-blue cl-cyan',
         },
         '4': {
             'header': 'border-cyan',
             'top-element': 'bg-yellow',
             'modality': 'bg-cyan cl-blue',
-            'level': 'cl-cyan',
+            'level': 'bg-blue cl-cyan',
         }
     },
     spanish: {
@@ -36,19 +36,19 @@ const defs = {
             'header': 'border-pink',
             'top-element': 'bg-cyan',
             'modality': 'bg-pink cl-white',
-            'level': 'cl-cyan',
+            'level': 'bg-blue cl-cyan',
         },
         '3': {
             'header': 'border-pink',
             'top-element': 'bg-cyan',
             'modality': 'bg-pink cl-white',
-            'level': 'cl-cyan',
+            'level': 'bg-blue cl-cyan',
         },
         '4': {
             'header': 'border-pink',
             'top-element': 'bg-cyan',
             'modality': 'bg-pink cl-white',
-            'level': 'cl-cyan',
+            'level': 'bg-blue cl-cyan',
         }
     },
     german: {
@@ -62,19 +62,19 @@ const defs = {
             'header': 'border-yellow',
             'top-element': 'bg-cyan',
             'modality': 'bg-yellow cl-blue',
-            'level': 'cl-cyan',
+            'level': 'bg-blue cl-cyan',
         },
         '3': {
             'header': 'border-yellow',
             'top-element': 'bg-cyan',
             'modality': 'bg-yellow cl-blue',
-            'level': 'cl-cyan',
+            'level': 'bg-blue cl-cyan',
         },
         '4': {
             'header': 'border-yellow',
             'top-element': 'bg-cyan',
             'modality': 'bg-yellow cl-blue',
-            'level': 'cl-cyan',
+            'level': 'bg-blue cl-cyan',
         }
     },
     french: {
@@ -88,19 +88,19 @@ const defs = {
             'header': 'border-purple',
             'top-element': 'bg-cyan',
             'modality': 'bg-purple cl-white',
-            'level': 'cl-cyan',
+            'level': 'bg-blue cl-cyan',
         },
         '3': {
             'header': 'border-purple',
             'top-element': 'bg-cyan',
             'modality': 'bg-purple cl-white',
-            'level': 'cl-cyan',
+            'level': 'bg-blue cl-cyan',
         },
         '4': {
             'header': 'border-purple',
             'top-element': 'bg-cyan',
             'modality': 'bg-purple cl-white',
-            'level': 'cl-cyan',
+            'level': 'bg-blue cl-cyan',
         }
     },
     japanese: {
@@ -114,19 +114,19 @@ const defs = {
             'header': 'border-pink',
             'top-element': 'bg-yellow',
             'modality': 'bg-pink cl-white',
-            'level': 'cl-yellow',
+            'level': 'bg-blue cl-yellow',
         },
         '3': {
             'header': 'border-pink',
             'top-element': 'bg-yellow',
             'modality': 'bg-pink cl-white',
-            'level': 'cl-yellow',
+            'level': 'bg-blue cl-yellow',
         },
         '4': {
             'header': 'border-pink',
             'top-element': 'bg-yellow',
             'modality': 'bg-pink cl-white',
-            'level': 'cl-yellow',
+            'level': 'bg-blue cl-yellow',
         }
     },
     portuguese: {
@@ -140,19 +140,19 @@ const defs = {
             'header': 'border-yellow',
             'top-element': 'bg-pink',
             'modality': 'bg-yellow cl-blue',
-            'level': 'cl-yellow',
+            'level': 'bg-blue cl-yellow',
         },
         '3': {
             'header': 'border-yellow',
             'top-element': 'bg-pink',
             'modality': 'bg-yellow cl-blue',
-            'level': 'cl-yellow',
+            'level': 'bg-blue cl-yellow',
         },
         '4': {
             'header': 'border-yellow',
             'top-element': 'bg-pink',
             'modality': 'bg-yellow cl-blue',
-            'level': 'cl-yellow',
+            'level': 'bg-blue cl-yellow',
         }
     },
 }

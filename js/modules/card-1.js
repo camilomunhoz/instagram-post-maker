@@ -3,7 +3,7 @@ const content = data => `
         <div class="top-element">${data.classes[0].startDate} - ${data.classes[0].endDate}</div>
         <div class="date-time">
             <div>
-                <div class="date">${data.classes[0].weekday}</div>
+                <div class="weekday">${data.classes[0].weekday}</div>
                 <div class="time">${data.classes[0].startTime} - ${data.classes[0].endTime}</div>
             </div>
         </div>

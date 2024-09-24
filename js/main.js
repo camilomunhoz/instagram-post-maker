@@ -69,28 +69,7 @@ const data = {
                     "teacher": "Foolano di Tahl",
                     "mentor": "Prof. Dra. Ana Bocorny"
                 },
-                {
-                    "startDate": "00/00/2024",
-                    "endDate": "00/00/2024",
-                    "weekday": "Segunda-feira",
-                    "startTime": "00:00",
-                    "endTime": "00:00",
-                    "modality": "Online",
-                    "level": "intermediário-avançado",
-                    "teacher": "Foolano di Tahl",
-                    "mentor": "Prof. Dra. Ana Bocorny"
-                },
-                {
-                    "startDate": "00/00/2024",
-                    "endDate": "00/00/2024",
-                    "weekday": "Segunda-feira",
-                    "startTime": "00:00",
-                    "endTime": "00:00",
-                    "modality": "Online",
-                    "level": "intermediário-avançado",
-                    "teacher": "Foolano di Tahl",
-                    "mentor": "Prof. Dra. Ana Bocorny"
-                },
+                
             ]
         },
     ]

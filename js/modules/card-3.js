@@ -14,7 +14,7 @@ function card(info) {
             </div>
             <div class="more-info">
                 <div class="date-time">
-                    <div class="date">${info.weekday}</div>
+                    <div class="weekday">${info.weekday}</div>
                     <div class="time">${info.startTime} - ${info.endTime}</div>
                 </div>
                 <div class="group-teacher">
