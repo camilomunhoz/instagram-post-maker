@@ -11,13 +11,13 @@ $(() => {
 
     $.get('/data.example.json')
         .done(data => {
-            $('textarea[name="data"]').val(JSON.stringify(data, null, '    '))
+            editor.setValue(JSON.stringify(data, null, '\t'))
         })
 })
 
 function generate() {
     const cards = [card1, card2, card3, card4]
-    const data = JSON.parse($('textarea[name="data"]').val())
+    const data = JSON.parse(editor.getValue())
     data.language = $('input[name="lang"]:checked').val()
     data.mentor = defs[data.language].mentor
 

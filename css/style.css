@@ -29,22 +29,28 @@ body {
 }
 
 .controls label {
-    margin-bottom: 1em;
     margin-right: 1em;
     display: inline-block;
 }
 
-.controls textarea, .controls button {
-    font-size: inherit;
-}
-
-.controls textarea {
+.controls #editor {
+    height: 300px;
     width: 100%;
     max-width: 600px;
+    margin: 2em 0;
+    border-radius: 10px;
 }
 
 .controls button {
+    font-size: inherit;
     padding: 12px;
+    margin-right: 2em;
+}
+
+.controls > a {
+    font-size: inherit;
+    padding: 12px;
+    margin-right: 2em;
 }
 
 .result {

@@ -20,12 +20,14 @@
         <label><input type="radio" value="japanese" name="lang"> Japonês</label>
         <label><input type="radio" value="portuguese" name="lang"> Português</label>
 
-        <div>
-            <textarea name="data" cols="80" rows="20"></textarea>
-        </div>
+        <div id="editor"></div>
+
+        <!-- <div> -->
+            <!-- <textarea name="data" cols="80" rows="20"></textarea> -->
+        <!-- </div> -->
 
         <button class="btn-generate">Gerar</button>
-        <a href="/data.example.json" target="_blank">Ver exemplo</a>
+        <a href="/data.example.json" target="_blank">Ver dados de exemplo</a>
     </div>
 
     <div class="result">
@@ -36,5 +38,12 @@
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script src="https://demos.flesler.com/jquery/scrollTo/js/jquery.scrollTo-min.js"></script>
     <script type="module" src="js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.36.2/ace.min.js" integrity="sha512-xylzfb6LZn1im1ge493MNv0fISAU4QkshbKz/jVh6MJFAlZ6T1NRDJa0ZKb7ECuhSTO7fVy8wkXkT95/f4R4nA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/solarized_light");
+        editor.session.setMode("ace/mode/json");
+    </script>
 </body>
 </html>
