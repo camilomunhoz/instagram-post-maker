@@ -1,10 +1,11 @@
-const content = data => data.classes.reduce((acc, _class) => acc += card(_class), "")
+let i = 0;
+const content = data => data.classes.reduce((acc, _class) => acc += card(_class, ++i), "")
 
-function card(info) {
+function card(info, i) {
     return `
         <div class="card">
             <div class="top-element">
-                TURMA X
+                TURMA ${i}
             </div>
             <div class="date-time">
                 <div>

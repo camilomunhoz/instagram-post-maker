@@ -8,53 +8,74 @@ import card4 from "./modules/card-4.js"
 
 $(() => {
     $('.btn-generate').on('click', generate)
+
+    $.get('/data.example.json')
+        .done(data => {
+            $('textarea[name="data"]').val(JSON.stringify(data, null, '    '))
+        })
 })
 
 function generate() {
     const cards = [card1, card2, card3, card4]
     const data = JSON.parse($('textarea[name="data"]').val())
     data.language = $('input[name="lang"]:checked').val()
+    data.mentor = defs[data.language].mentor
 
     $('.instagram-card').remove()
+    $('.result').empty()
     
     for (const course of data.courses) {
         const nClasses = course.classes.length
-        course.mentor = defs[data.language].mentor
         
         const instagramCard = template({
             courseName: course.name,
             content: cards[nClasses - 1](course),
-            language: data.language,
             nClasses: nClasses,
+            language: data.language,
+            mentor: course.mentor || data.mentor,
         })
 
         $('body').append(instagramCard)
     }
 
     colorize(data.language)
-    // downloadable()
+    downloadable()
 }
 
 function downloadable() {
-    $('.instagram-card').each((i, el) => {
-        html2canvas(el, {
-            scale: 1,
-        }).then(function(canvas) {
-            document.body.appendChild(canvas);
-            $('<a/>', {
-                href: canvas.toDataURL('image/png'),
-                download: `curso-${i}.png`,
-            })
-            $('a')[0].href = canvas.toDataURL('image/png')
-            // $('.instagram-card').slideUp(200)
+    const imgs = [];
+    const promises = [];
+
+    new Promise(resolve => {
+        $('.instagram-card').each((i, el) => {
+            const promise = html2canvas(el, {scale: 1})
+                .then(function(canvas) {
+                    imgs.push(canvas.toDataURL('image/png'));
+                    $(el).remove();
+                });
+
+            promises.push(promise);
         });
+        Promise.all(promises).then(() => resolve());
     })
+    .then(() => {
+        $('.result').append('<div>Pronto! Clique para nas imagens para baixá-las.</div>')
+
+        imgs.forEach((blob, i) => $('.result').append(
+            $('<a/>', {
+                href: blob,
+                download: `curso-${i+1}.png`,
+            }).append(
+                $('<img/>', {src: blob, class: 'instagram-png'})
+            )
+        ));
+
+        $('body').scrollTo('100%')
+    });
 }
 
 function colorize(language) {
     const cards = $('.instagram-card')
-
-    clearStyles();
 
     cards.each((_, el) => {
         const nClasses = $(el).data('n-classes')
@@ -64,8 +85,4 @@ function colorize(language) {
             $(el).find('.'+item).addClass(styleGuide[item])
         }
     })
-}
-
-function clearStyles() {
-    $('.instagram-card *').removeClass('cl-white cl-blue cl-yellow cl-cyan cl-pink cl-purple bg-white bg-blue bg-yellow bg-cyan bg-pink bg-purple border-blue border-yellow border-cyan border-pink border-purple ')
 }

@@ -13,7 +13,7 @@
 <body>
 
     <div class="controls">
-        <label><input type="radio" value="english" name="lang"> Inglês</label>
+        <label><input type="radio" value="english" name="lang" checked> Inglês</label>
         <label><input type="radio" value="spanish" name="lang"> Espanhol</label>
         <label><input type="radio" value="german" name="lang"> Alemão</label>
         <label><input type="radio" value="french" name="lang"> Francês</label>
@@ -28,10 +28,13 @@
         <a href="/data.example.json" target="_blank">Ver exemplo</a>
     </div>
 
-    <!-- dinamically via JS -->
+    <div class="result">
+        <!-- dinamically via JS -->
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://demos.flesler.com/jquery/scrollTo/js/jquery.scrollTo-min.js"></script>
     <script type="module" src="js/main.js"></script>
 </body>
 </html>

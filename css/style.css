@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     height: 100%;
 }
@@ -14,7 +18,6 @@ body {
     padding: 2em;
     font-family: Montserrat;
     font-weight: 500;
-    font-size: 27px;
     color: var(--cla-blue);
     background-color: #555;
 }
@@ -22,7 +25,13 @@ body {
 .controls {
     background-color: #fff;
     padding: 1.5em;
-    font-size: 30px;
+    margin-bottom: 2em;
+}
+
+.controls label {
+    margin-bottom: 1em;
+    margin-right: 1em;
+    display: inline-block;
 }
 
 .controls textarea, .controls button {
@@ -31,11 +40,28 @@ body {
 
 .controls textarea {
     width: 100%;
-    max-width: 1080px;
+    max-width: 600px;
 }
 
 .controls button {
-    padding: 20px;
+    padding: 12px;
+}
+
+.result {
+    color: white
+}
+
+.instagram-png {
+    width: 250px;
+    height: 250px;
+    transition: filter .2s ease, transform .2s ease;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.instagram-png:hover {
+    filter: brightness(0.5);
+    transform: scale(0.9);
 }
 
 .instagram-card {
@@ -46,6 +72,12 @@ body {
     flex-direction: column;
     align-items: stretch;
     margin-bottom: 2em;
+    font-size: 27px;
+}
+
+.instagram-card:not(.dev) {
+    position: absolute;
+    right: 9999px;
 }
 
 .header {

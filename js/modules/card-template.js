@@ -11,7 +11,7 @@ const template = data => `
             </div>
             <div class="footer">
                 <div class="logo"><img src="/logo.png"></div>
-                <div class="mentor">Orientação: Prof. Dra. Ana Bocorny</div>
+                <div class="mentor">${data.mentor}</div>
             </div>
         </div>
     </div>
