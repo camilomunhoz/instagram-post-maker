@@ -1,5 +1,7 @@
-let i = 0;
-const content = data => data.classes.reduce((acc, _class) => acc += card(_class, ++i), "")
+const content = data => {
+    let i = 0;
+    return data.classes.reduce((acc, _class) => acc += card(_class, ++i), "")
+}
 
 function card(info, i) {
     return `
