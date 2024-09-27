@@ -7,7 +7,7 @@ function card(info, i) {
     return `
         <div class="card">
             <div class="top-element">
-                TURMA ${i}
+                TURMA ${info.label || i}
             </div>
             <div class="date-time">
                 <div>

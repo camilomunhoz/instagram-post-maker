@@ -8,7 +8,7 @@ function card(info, i) {
         <div class="card">
             <div class="top-element">
                 <div>
-                    <span>TURMA ${i}</span>
+                    <span>TURMA ${info.label || i}</span>
                     <div class="modality">${info.modality}</div>
                 </div>
                 <div>

@@ -8,7 +8,7 @@ function card(info, i) {
         <div class="card">
             <div class="top-element">
                 <div>
-                    <span>TURMA ${i}</span>
+                    <span>TURMA ${info.label || i}</span>
                     <div class="dates"></div>
                 </div>
                 <div class="level" style="font-size: ${18 - (info.level.length * 0.09) * (info.level.length * 0.09)}px">
