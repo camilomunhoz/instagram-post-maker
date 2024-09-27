@@ -12,7 +12,8 @@
 					"endTime": "00:00",
 					"modality": "Online",
 					"level": "Básico",
-					"teacher": "Foolano di Tahl"
+					"teacher": "Foolano di Tahl",
+					"teacherLabel": "professor convidado"
 				},
 				{
 				    "label": "B",
@@ -23,7 +24,8 @@
 					"endTime": "00:00",
 					"modality": "Online",
 					"level": "intermediário-avançado",
-					"teacher": "Foolano di Tahl"
+					"teacher": "Foolano di Tahl",
+					"teacherLabel": ""
 				}
 			]
 		},
@@ -31,7 +33,7 @@
 			"name": "Outro de Mentira para o Template",
 			"classes": [
 				{
-				    "label": "",
+				    "label": null,
 					"startDate": "00/00/2024",
 					"endDate": "00/00/2024",
 					"weekday": "Segunda-feira",
@@ -39,7 +41,8 @@
 					"endTime": "00:00",
 					"modality": "Online",
 					"level": "Básico",
-					"teacher": "Foolano di Tahl"
+					"teacher": "Foolano di Tahl",
+					"teacherLabel": null
 				}
 			]
 		}

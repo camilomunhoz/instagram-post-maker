@@ -23,7 +23,7 @@ function card(info, i) {
                 </div>
             </div>
             <div class="group-teacher">
-                <div class="label">PROFESSOR(A) BOLSISTA</div>
+                <div class="label">${info.teacherLabel || "PROFESSOR(A) BOLSISTA"}</div>
                 <div class="teacher">${info.teacher}</div>
             </div>
         </div>

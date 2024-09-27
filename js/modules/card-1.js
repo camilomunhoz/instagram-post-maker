@@ -22,7 +22,7 @@ const content = data => `
                 <div class="level">${data.classes[0].level}</div>
             </div>
             <div class="group">
-                <div class="label">PROFESSOR(A) BOLSISTA</div>
+                <div class="label">${data.classes[0].teacherLabel || "PROFESSOR(A) BOLSISTA"}</div>
                 <div class="teacher">${data.classes[0].teacher}</div>
             </div>
         </div>

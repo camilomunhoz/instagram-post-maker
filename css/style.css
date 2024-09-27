@@ -190,6 +190,7 @@ body {
 .body.n-classes--1 .more-info .label {
     font-weight: 400;
     margin-bottom: 8px;
+    text-transform: uppercase;
 }
 
 .body.n-classes--1 .more-info .group:not(:last-of-type) {
@@ -313,6 +314,7 @@ body {
 
 .body.n-classes--2 .group-level .label {
     font-size: 22px;
+    text-transform: uppercase;
 }
 
 .body.n-classes--2 .group-level .level {
@@ -335,6 +337,7 @@ body {
 .body.n-classes--2 .group-teacher .label {
    font-size: 22px;
    margin-bottom: 5px;
+   text-transform: uppercase;
 }
 
 .body.n-classes--2 .group-teacher .teacher {
@@ -453,6 +456,7 @@ body {
 .body.n-classes--3 .group-teacher .label {
    font-size: 22px;
    margin-bottom: 5px;
+   text-transform: uppercase;
 }
 
 .body.n-classes--3 .group-teacher .teacher {
@@ -557,6 +561,7 @@ body {
 .body.n-classes--4 .group-teacher .label {
    font-size: 18px;
    margin-bottom: 5px;
+   text-transform: uppercase;
 }
 
 .body.n-classes--4 .group-teacher .teacher {
