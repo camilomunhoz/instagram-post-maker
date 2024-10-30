@@ -154,6 +154,19 @@ body {
     background-color: #aaa;
     height: 75px;
     border-bottom: 4px solid var(--cla-blue);
+    position: relative;
+}
+
+
+.body.n-classes--1 .save-the-date .top-element .ring {
+    position: absolute;
+    top: -47px;
+}
+.body.n-classes--1 .save-the-date .top-element .ring:first-of-type {
+    left: 70px;
+}
+.body.n-classes--1 .save-the-date .top-element .ring:last-of-type {
+    right: 70px;
 }
 
 .body.n-classes--1 .save-the-date .date-time {

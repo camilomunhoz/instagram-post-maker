@@ -7,6 +7,7 @@ const defs = {
                 'top-element': 'bg-yellow',
                 'modality': 'bg-cyan cl-blue',
                 'level': 'cl-cyan',
+                'ring-top': 'stroke-yellow',
             },
             '2': {
                 'header': 'border-cyan',
@@ -36,6 +37,7 @@ const defs = {
                 'top-element': 'bg-cyan',
                 'modality': 'bg-pink cl-white',
                 'level': 'cl-cyan',
+                'ring-top': 'stroke-cyan',
             },
             '2': {
                 'header': 'border-pink',
@@ -65,6 +67,7 @@ const defs = {
                 'top-element': 'bg-cyan',
                 'modality': 'bg-yellow cl-blue',
                 'level': 'cl-cyan',
+                'ring-top': 'stroke-cyan',
             },
             '2': {
                 'header': 'border-yellow',
@@ -94,6 +97,7 @@ const defs = {
                 'top-element': 'bg-cyan',
                 'modality': 'bg-purple cl-white',
                 'level': 'cl-cyan',
+                'ring-top': 'stroke-cyan',
             },
             '2': {
                 'header': 'border-purple',
@@ -123,6 +127,7 @@ const defs = {
                 'top-element': 'bg-yellow',
                 'modality': 'bg-pink cl-white',
                 'level': 'cl-yellow',
+                'ring-top': 'stroke-yellow',
             },
             '2': {
                 'header': 'border-pink',
@@ -152,6 +157,7 @@ const defs = {
                 'top-element': 'bg-pink',
                 'modality': 'bg-yellow cl-blue',
                 'level': 'cl-yellow',
+                'ring-top': 'stroke-pink',
             },
             '2': {
                 'header': 'border-yellow',

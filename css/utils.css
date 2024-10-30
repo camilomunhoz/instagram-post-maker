@@ -59,3 +59,19 @@
 .border-purple {
     border-color: var(--cla-purple) !important;
 }
+
+.stroke-blue {
+    stroke: var(--cla-blue) !important;
+}
+.stroke-yellow {
+    stroke: var(--cla-yellow) !important;
+}
+.stroke-cyan {
+    stroke: var(--cla-cyan) !important;
+}
+.stroke-pink {
+    stroke: var(--cla-pink) !important;
+}
+.stroke-purple {
+    stroke: var(--cla-purple) !important;
+}

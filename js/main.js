@@ -51,7 +51,10 @@ function downloadable() {
             const promise = html2canvas(el, {scale: 1})
                 .then(function(canvas) {
                     imgs.push(canvas.toDataURL('image/png'));
-                    $(el).remove();
+
+                    if (!$(el).hasClass('dev')) {
+                        $(el).remove();
+                    }
                 });
 
             promises.push(promise);
