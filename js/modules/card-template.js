@@ -1,5 +1,5 @@
 const template = data => `
-    <div class="instagram-card dev" data-language="${data.language}" data-n-classes="${data.nClasses}">
+    <div class="instagram-card" data-language="${data.language}" data-n-classes="${data.nClasses}">
         <div class="header">
             <span class="title">
                 ${data.courseName}

@@ -13,6 +13,8 @@ $(() => {
         .done(data => {
             editor.setValue(JSON.stringify(data, null, '\t'))
         })
+
+    adaptTitleSize()
 })
 
 function generate() {
@@ -38,6 +40,7 @@ function generate() {
         $('body').append(instagramCard)
     }
 
+    adaptTitleSize()
     colorize(data.language)
     downloadable()
 }
@@ -87,5 +90,23 @@ function colorize(language) {
         for (const item of Object.keys(styleGuide)) {
             $(el).find('.'+item).addClass(styleGuide[item])
         }
+    })
+}
+
+/** Guarantees that the title will always be 2 lines height */
+function adaptTitleSize() {
+    const titles = $('.instagram-card .header')
+
+    titles.each((i, el) => {
+        let boxHeight
+
+        do {
+            const fontSize = parseInt(getComputedStyle(el).fontSize, 10);
+            boxHeight = $(el).find('.title')[0].getBoundingClientRect().height
+            
+            if (boxHeight > 145) {
+                $(el).css('font-size', (fontSize - 2)+'px')
+            }
+        } while (boxHeight > 145)
     })
 }
